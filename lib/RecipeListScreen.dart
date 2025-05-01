@@ -13,7 +13,7 @@ class RecipeListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final filteredRecipes =
-        recipes.where((r) => r['category'] == category).take(3).toList();
+        recipes.where((r) => r['category'] == category).toList();
 
     return Scaffold(
       appBar: AppBar(title: Text('$category Recipes')),
